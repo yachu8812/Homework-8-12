@@ -17,8 +17,7 @@ const AddUser = () => {
         
         //create
         userService.create(user)
-            .then(response => {
-                alert(response)
+            .then(response => {   
                 console.log('User data added successfully', response.data);
                 navigate('/');
             })
